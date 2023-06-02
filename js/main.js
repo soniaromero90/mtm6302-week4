@@ -106,3 +106,40 @@ document.querySelector(".container h1").innerHTML += firstName
 function changeBg(bgColor){
     document.querySelector("body").style.backgroundColor = bgColor
 }
+
+// another function
+
+function textResize(newFontSize){
+    document.querySelector("html").style.fontSize = newFontSize
+}
+
+// calculator
+
+function calculator(a,b,operator) {
+    let result
+
+    switch(operator){
+
+        case "add": 
+            result = a + b
+            break
+
+        case "sub":
+            result = a - b
+            break
+
+        case "multi":
+            result = a * b
+            break
+
+        case "div":
+            result = a / b
+            break
+
+        default:
+            result = "I don't understand!"
+        
+    }
+    return result
+}
+console.log(calculator(34, 35, "multi"))
